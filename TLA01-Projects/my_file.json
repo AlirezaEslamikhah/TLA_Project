@@ -1,0 +1,1 @@
+{"states": ["q0", "q1q3", "Trap", "q2q4", "q3q2", "q3", "q4", "q2"], "input_symbols": ["a", "b"], "transitions": {"q0": {"a": 

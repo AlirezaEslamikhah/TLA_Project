@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "SNQryyjm3ZOuHAl3l4nyw4tBmby9A8QzN5sk1d4i2NwPuo5We9EjhyPKLHLIKsjpEaCK+27I8m6kW+i24vZr6g==",
+  "success": true,
+  "projectFilePath": "E:\\github\\TLA_Project\\TLA01-Projects\\Implementations\\Implementations\\Implementations.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lenovo\\.nuget\\packages\\newtonsoft.json\\5.0.2\\newtonsoft.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json 5.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

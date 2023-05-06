@@ -1,0 +1,17 @@
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.csproj.AssemblyReference.cache
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.GeneratedMSBuildEditorConfig.editorconfig
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.AssemblyInfoInputs.cache
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.AssemblyInfo.cs
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.csproj.CoreCompileInputs.cache
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\bin\Debug\net6.0\Implementations.exe
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\bin\Debug\net6.0\Implementations.deps.json
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\bin\Debug\net6.0\Implementations.runtimeconfig.json
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\bin\Debug\net6.0\Implementations.dll
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\bin\Debug\net6.0\Implementations.pdb
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.dll
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\refint\Implementations.dll
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.pdb
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.genruntimeconfig.cache
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\ref\Implementations.dll
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\github\TLA_Project\TLA01-Projects\Implementations\Implementations\obj\Debug\net6.0\Implementations.csproj.CopyComplete
