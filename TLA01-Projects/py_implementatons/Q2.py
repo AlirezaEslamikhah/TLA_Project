@@ -85,7 +85,7 @@ def find_next(tmp):
             elif (a[0] == i[0]) and (a[2] != i[2]):
                 f = False
                 break
-        if f== True:
+        if f == True:
             if i[0] not in result and i[0] not in states_taken:
                 result.append(i[0])
                 break
@@ -147,23 +147,6 @@ for h in fa.states:
     last_dic[h] = 0
 
 
-# rr = []
-
-# for g in range(len(result)):
-#     for t in result[g]:
-#         rrr = []
-#         if last_dic[t] == 0:
-#             last_dic[t] = 1
-#             rrr.append(t)
-#         else:
-#             # result.remove(result[g])
-#             break
-#         if rrr != [] : 
-#             rr.append(rrr)
-
-# print(transitions)
-
-# print( result)
 
 temp_dics = []
 for f in range(len(result)):
@@ -175,4 +158,23 @@ for f in range(len(result)):
             temp_dict[t[1]].append(t[2])
     temp_dics.append(temp_dict)
 
-print(temp_dics)
+temp = []
+for k in range(len(result)):
+    for q in fa.input_symbols:
+        temp.append(str(result[k]) + str(q) + ":")
+
+# print(temp)
+print(result,"\n\n\n\n")
+rresult = result.copy()
+for t in rresult:
+    for tt in t:
+        for vv in transitions:
+            if vv[0] == tt and vv[1] == '1':
+                t.append(str(tt) + ": 1 "+"===>"+str(vv[2]))
+            elif vv[0] == tt and vv[1] == '0':
+                t.append(str(tt) + ": 0 "+"===>"+str(vv[2]))
+
+print(rresult)
+# print(temp_dics)
+
+# print("\n\n",result)

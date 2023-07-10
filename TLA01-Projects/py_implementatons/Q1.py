@@ -38,7 +38,7 @@ class new_dfa :
         self.transitions = transitions
         self.startstate = startstate
 
-with open("E:\github\TLA_Project\TLA01-Projects\samples\phase1-sample\in\input2.json", 'r') as f:
+with open("E:\github\TLA_Project\TLA01-Projects\samples\phase1-sample\in\input1.json", 'r') as f:
     data = json.load(f)
 
 fa = FiniteAutomaton(
@@ -162,9 +162,8 @@ def Q1(states , input_symbols , initial_state , final_states , transitions , m):
         for i in input_symbols:
             s = move(result[k], i, ddfa)
             sl = landa(s, ddfa)
-
             if not contain(result,sl):
-                print("The state is",result[k],"and the move to",i , "is",sl)
+                # print("The state is",result[k],"and the move to",i , "is",sl)
                 new_tr.append((str(result[k]), str(i), str(sl)))
                 result.append(sl)
         k += 1
@@ -178,7 +177,7 @@ r = Q1(states, input_symbols, initial_state, final_states, transitions, m)
 for v in range(len(r)):
     if r[v] == []:
         r[v] = 'Trap'
-print(r)
+# print(r)
 
 
 # new_transitions = {}
@@ -202,21 +201,21 @@ for i in r :
     # new_transitions[v] = {}
     if jj != "":
         ndfa.final_states.append(v)
-print(ndfa.final_states)
+# print(ndfa.final_states)
 
 # print(new_tr)
 
 for state in ndfa.states:
     new_transitions[str(state)] = {}
     for symbol in fa.input_symbols:
-        new_transitions[str(state)][symbol] = {'Trap'}
+        new_transitions[str(state)][symbol] = {'TRAP'}
 
 for w in new_tr:
     start = w[0].replace("[","").replace("]", "").replace("'", "").replace(",", "").replace(" ", "")
     edge = w[1]
     end = w[2].replace("[","").replace("]", "").replace("'", "").replace(",", "").replace(" ", "")
     if end == "":
-        end = 'Trap'
+        end = 'TRAP'
     new_transitions[start][edge] = {end}
 
 # print(new_transitions)
@@ -236,12 +235,19 @@ def find_destination(state,alefba):
 
 
 
-total_result = {}
-total_result["states"] = ndfa.states
-total_result["input_symbols"] = ndfa.input_symbols
-total_result["transitions"] = ndfa.transitions
-total_result["initial_state"] = ndfa.startstate
-total_result["final_states"] = ndfa.final_states
+# total_result = {}
+
+# total_result["states"] = ndfa.states
+# total_result["input_symbols"] = ndfa.input_symbols
+# total_result["transitions"] = ndfa.transitions
+# total_result["initial_state"] = ndfa.startstate
+# total_result["final_states"] = ndfa.final_states
 
 # with open("my_file.json", "w") as f:
 #     json.dump(total_result, f)
+
+print("The states are " , ndfa.states)
+print("\nThe input symbols are" , ndfa.input_symbols)
+print("\nThe transitions are",ndfa.transitions )
+print("\nThes start state is",ndfa.startstate)
+print("\nThe final states are", ndfa.final_states)
